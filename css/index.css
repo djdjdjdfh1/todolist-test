@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../img/0.jpg);
+    background-size: cover;
+}
+h1, h2, #todo_form {
+    text-align: center;
+}
+/* 시간 디자인 */
+h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'TheJamsil5Bold';
+    text-shadow: 0 0 5px black;
+    margin: 30px 0;
+}
+h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'TheJamsil5Bold';
+    margin: 30px 0;
+}
+/* ul안 li 간격 주기 및 가운데 정렬 */
+ul {
+    margin: auto;
+    width: 300px;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: white solid 1px;
+    margin: 15px 0;
+}
+li span {
+    font-family: 'KyoboHandwriting2021sjy';
+    font-size: 1.2rem;
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+/* input[text] 배경없애기 */
+input[type="text"] {
+    font-size: 1.2rem;
+    font-family:'KyoboHandwriting2021sjy';
+    background-color: transparent;
+    border: none;
+    border-bottom: white solid 1px;
+    color: white;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 3px 7px;
+}
+/* 체크박스 체크되었을때 */
+input[type="checkbox"]:checked {
+    color: white;
+}
+
+/* hidden*/
+.hidden {
+    display: none;
+}
